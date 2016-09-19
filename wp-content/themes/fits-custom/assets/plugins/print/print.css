@@ -1,0 +1,19 @@
+/* Print CSS
+========================================
+
+add .noPrint to any element to hide for printing
+
+to add print button to page add this html <!-- <a href="#" onClick=" window.print(); return false">Print this page!</a> -->
+
+*/
+
+body {
+	font-family: Verdana, sans-serif;
+	font-size: 14px; 
+	color: #5A5A5A;
+	background-color: #FFFFFF
+}
+
+ .noPrint {
+ 	display: none;
+ }

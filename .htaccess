@@ -1,0 +1,18 @@
+Header set X-Robots-Tag "noindex, nofollow"
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /fits/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /fits/index.php [L]
+</IfModule>
+
+# END WordPress
+
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /home/wwwfits/public_html/demo/.htpasswd
+Require valid-user
